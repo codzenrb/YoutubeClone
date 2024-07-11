@@ -1,0 +1,360 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #100f0f;
+}
+
+.nav {
+
+    height: 5.5vh;
+    display: grid;
+    grid-template-columns: 33.3vw 33.3vw 33.3vw;
+    position: fixed;
+    background-color: #100f0f;
+    z-index: 1;
+}
+
+.nav1 {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 20px;
+    padding-left: 20px;
+
+
+}
+
+.nav2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+
+
+}
+
+#searchbar {
+
+    width: 460px;
+    height: 20px;
+    padding: 7px 14px;
+    font-size: 14px;
+    background-color: #100f0f;
+    border-style: solid;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-color: rgba(57, 57, 57, 0.533);
+    border-width: 1px;
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+    background-color: rgba(57, 57, 57, 0.533);
+    height: 36px;
+    width: 47px;
+    border-left-style: none;
+    border-right-style: solid;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: rgba(77, 76, 76, 0.533);
+    border-width: 1px;
+    border-top-right-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.speech {
+    padding: 7px;
+    padding-right: 37px;
+    height: 37px;
+    width: 37px;
+    border-radius: 50px;
+    background-color: rgba(88, 88, 88, 0.533);
+    border-style: none;
+    margin-left: 15px;
+
+}
+
+.nav3 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 15px;
+    margin-right: 25px;
+}
+
+.logo {
+    border-radius: 50px;
+}
+
+.sidebar1 {
+    width: 4vw;
+    height: 94.5vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 10px;
+    gap: 30px;
+    margin-top: 3px;
+    position: fixed;
+    top: 55px;
+}
+
+.sidelg {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+
+
+}
+
+.sidelg img {
+    padding-left: 20px;
+}
+
+.videos {
+    width: 95vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 23.5vw 23.5vw 23.5vw 23.5vw;
+    grid-template-rows: 37.6vh 37.6vh 37.6vh;
+    position: absolute;
+    right: 0px;
+    top: 55px;
+    color: white;
+    padding-left: 10px;
+    z-index: -1;
+
+    /* background-color: blue; */
+}
+
+.one {
+    /* grid-column-start: 1;
+    grid-column-end: 2; */
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    /* padding: 50px; */
+padding-bottom: 100px;
+
+}
+
+.one img {
+    border-radius: 10px;
+
+}
+
+.title {
+    /* width: 23.5vw; */
+    padding-top: 8px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+
+}
+
+.title img {
+    border-radius: 50px;
+    position: relative;
+    bottom: 18px;
+}
+
+.title-channel-name {
+    color: rgba(255, 255, 255, 0.472);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    gap: 3px;
+}
+
+.title-channel-name img {
+    position: relative;
+    top: 2px;
+}
+
+.title-views {
+    color: rgba(255, 255, 255, 0.472);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 13px;
+}
+
+@media only screen and (max-width: 1443px) {
+    .videos {
+        grid-template-columns: 32vw 32vw 32vw;
+    }
+
+    .title {
+        width: 340px;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    .videos {
+        grid-template-columns: 48vw 48vw;
+    }
+
+    .title {
+        width: 340px;
+    }
+}
+
+@media only screen and (max-width: 734px) {
+    .videos {
+        grid-template-columns: 96vw;
+        grid-template-rows: 27vh 27vh 27vh 27vh;
+        padding-left: 30px;
+        gap: 15px;
+    }
+
+    .title {
+        width: 340px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    #searchbar {
+        width: 139px;
+        height: 3.5px;
+
+    }
+
+    .ytlogo img{
+        height: 12px ;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .sidebar1 {
+       font-size: 5px;
+       margin-left: 0px;
+       position: fixed;
+      
+       gap: 12px;
+
+       }
+
+       .sidelg{
+        width: 2px;
+        padding-right: 20px;
+       }
+
+       .sidelg img{
+        width: 16px;
+       }
+
+       .nav{
+        gap: 9px;
+       }
+
+       .nav1{
+        gap: 3px;
+        padding-left: 7px;
+       }
+
+       .nav1 img{
+        height: 12px;
+       }
+       .nav2{
+        margin-top: 0px;
+       }
+ 
+       .nav3{
+        gap: 5px;
+        margin-right: 5px;
+        position: relative;
+        right: 14px;
+       }
+       .nav3 img{
+        width: 14px;
+
+       }
+
+       .nav3 .logo{
+        width: 16px;
+        height: 16px;
+       }
+}
+
+@media only screen and (max-width: 950px) {
+    .search {
+        width: 35px;
+        height: 19px;
+
+    }
+
+    .search img {
+        width: 13px;
+        padding-left: 3px;
+    }
+}
+
+@media only screen and (max-width: 950px) {
+    .speech {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 22px;
+        width: 25px;
+        padding-right: 0px;
+        margin-left: 5px;
+
+
+
+    }
+
+    .speech img {
+        width: 14px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 3px;
+
+    }
+}
+
+@media only screen and (max-width: 950px) {
+      .txt1 {
+ padding-left: 21px;
+}
+
+.txt2 {
+ padding-left: 21px;
+}
+.txt3{
+    padding-left: 15px;
+} 
+    .txt4 {
+ padding-left: 24px;
+}
+}
+
+
+/* .two{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1 ;
+    grid-row-end: 4 ;
+    display: flex;
+    justify-content: top;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+    padding: 50px;
+}
+
+.two img{
+    border-radius: 10px;
+} */
